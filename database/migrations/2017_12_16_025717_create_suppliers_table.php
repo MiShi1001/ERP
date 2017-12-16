@@ -13,7 +13,7 @@ class CreateSuppliersTable extends Migration
      */
     public function up()
     {
-        Schema::create('suplliers', function (Blueprint $table) {
+        Schema::create('suppliers', function (Blueprint $table) {
             $table->increments('id');
             $table->string('sid');
             $table->string('name');
@@ -37,6 +37,6 @@ class CreateSuppliersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('suplliers');
+        Schema::dropIfExists('suppliers');
     }
 }
