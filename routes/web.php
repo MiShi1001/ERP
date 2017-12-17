@@ -42,3 +42,9 @@ Route::group(['prefix' => 'basic'], function() {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::group(['prefix' => 'setting'], function() {
+    //設定->使用者密碼
+    Route::get('reset', ['as' => 'user_reset', 'uses' => 'HomeController@reset']);
+});

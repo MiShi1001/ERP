@@ -25,4 +25,10 @@ class HomeController extends Controller
     {
         return view('index');
     }
+
+    public function reset()
+    {
+        return view('auth.passwords.reset');
+    }
 }
+

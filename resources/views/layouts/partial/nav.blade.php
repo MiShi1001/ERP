@@ -209,7 +209,7 @@
             <ul class="dropdown-menu dropdown-user">
                 <li><a href="#"><i class="fa fa-user fa-fw"></i>{{ Auth::user()->name }} </a>
                 </li>
-                <li><a href="reset.php"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                <li><a href="{{route('user_reset')}}"><i class="fa fa-gear fa-fw"></i> Settings</a>
                 </li>
                 <li class="divider"></li>
                 <li><a href="welcom.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
