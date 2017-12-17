@@ -212,7 +212,7 @@
                 <li><a href="{{route('user_reset')}}"><i class="fa fa-gear fa-fw"></i> Settings</a>
                 </li>
                 <li class="divider"></li>
-                <li><a href="welcom.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                <li><a href="{{Auth::logout()}}"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                 </li>
             </ul>
             <!-- /.dropdown-user -->

@@ -11,14 +11,10 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/',  function () {
     return view('welcome');
 });
 
-
-Route::get('/index',function (){
-    return view('index');
-});
 
 Route::group(['prefix' => 'basic'], function() {
     //基本資料->供應商
