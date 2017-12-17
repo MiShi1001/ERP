@@ -38,3 +38,7 @@ Route::group(['prefix' => 'basic'], function() {
     //基本資料->供應商->取消
     Route::get('suppliers/recall', ['as' => 'supplier.recall', 'uses' => 'SupplierController@recall']);
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
