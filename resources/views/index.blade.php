@@ -1,10 +1,9 @@
-@extends('layoutd.master')
-@section('title','Home')
+
+@extends('layouts.master')
+
+@section('title', 'index')
+
 @section('content')
-
-
-<!-- Banner -->
-<!-- Note: To show a background image, set the "data-bg" attribute below to the full filename of your image. This is used in each section to set the background image. -->
 
 
 <div id="page-wrapper">
