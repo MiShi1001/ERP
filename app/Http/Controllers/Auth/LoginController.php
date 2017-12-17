@@ -34,6 +34,9 @@ class LoginController extends Controller
      *
      * @return void
      */
+    public function username(){
+        return 'name';
+    }
     public function __construct()
     {
 
