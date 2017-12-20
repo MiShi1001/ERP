@@ -42,5 +42,8 @@ class User extends Authenticatable
     {
         return $this->hasMany('Manifacturer');
     }
-
+    public function Previlege() // User (n) ->Previlege (1)
+    {
+        return $this->belongsTo(Previlege::class);
+    }
 }
